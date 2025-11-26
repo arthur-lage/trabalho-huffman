@@ -69,8 +69,9 @@ def main():
 
             out.write("3 - Texto Codificado: \n")
             out.write(encoded_text + "\n\n")
+            
+            print("✅ Processamento concluído.")
+            print("ℹ️  Verifique 'data/output.dat' para os resultados da compressão.")
 
 if __name__ == "__main__":
     main()
-    print("✅ Processamento concluído.")
-    print("ℹ️  Verifique 'data/output.dat' para os resultados da compressão.")
