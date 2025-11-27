@@ -18,3 +18,7 @@ python3 src/main.py
 Caso o arquivo input.dat não exista, crie uma pasta 'data' na raiz do projeto e adicione o arquivo 'input.dat'. Os textos desse arquivo, separados por uma linha em branco, serão utilizados para a codificação de Huffman.
 
 Caso o arquivo já esteja presente no projeto, basta alterá-lo adicionando as frases desejadas.
+
+## Resultado
+
+O arquivo de output, com a árvore gerada, tabela de códigos e texto codificado será gerado após a execução do programa principal, e estará localizado na pasta "data".
