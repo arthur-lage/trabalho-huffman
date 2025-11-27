@@ -77,7 +77,7 @@ def huffman_tree_to_string(root, code="", prefix="", is_left=True):
     result = ""
     
     if root.is_leaf():
-        symbol_display = f"'{root.symbol}'" if root.symbol else "EOF"
+        symbol_display = f"{repr(root.symbol)}" if root.symbol else "EOF"
         result += f"{prefix}{'├── ' if not is_left else '└── '}{symbol_display} (freq: {root.frequency}, código: '{code}')\n"
     else:
         result += f"{prefix}{'├── ' if not is_left else '└── '}Interno (freq: {root.frequency})\n"
