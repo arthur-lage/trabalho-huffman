@@ -5,7 +5,7 @@ import huffman
 # Função que limpa o texto e o separa em uma lista de palavras e caract.
 def tokenizer(text):
     """Limpa o texto e constrói uma lista de palavras."""
-    return re.findall(r"[\w]+|[^\w]", text)
+    return re.findall(r"\w+|[^\w\s]", text, flags=re.UNICODE)
         
 # Função que calcula a frequência de cada palavra e retorna um dicionário.
 def calculate_frequency(words):
@@ -22,7 +22,7 @@ def main():
 
     # Tenta localizar o arquivo de input. Caso não exista, lança um erro.
     try:
-        with open("data/input.dat", "r") as f:
+        with open("data/input.dat", "r", encoding="utf-8") as f:
             content = f.read()
     except FileNotFoundError:
         print("ERRO: Não foi possível encontrar o arquivo 'data/input.dat'.")
